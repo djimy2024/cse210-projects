@@ -4,7 +4,20 @@ using System.Globalization;
 class Program
 {
            
-    
+    static void Main(string[] args)
+    {   
+        Console.WriteLine("Hello Prep5 World!");
+        // Display welcome message.
+        DisplayWelcome();
+        // The user name.
+        string UserName = PromptUserName();
+        // The user favoirite number.
+        int UserNumber = PromptUserNumber();
+        // Square of the user favoirite number.
+        int SNumber = SquareNumber(UserNumber);
+        // Display the name of the user and his favorite square number.
+        DisplayResult(UserName, SNumber);
+    }
     static void DisplayWelcome() // Function to display a welcome message.
     {
         Console.WriteLine("Welcome to the program!");
@@ -32,17 +45,5 @@ class Program
         Console.WriteLine($"{name}, the square of your number is {SquareNumber}");
     }
 
-    static void Main(string[] args)
-    {   
-        // Display welcome message.
-        DisplayWelcome();
-        // The user name.
-        string UserName = PromptUserName();
-        // The user favoirite number.
-        int UserNumber = PromptUserNumber();
-        // Square of the user favoirite number.
-        int SNumber = SquareNumber(UserNumber);
-        // Display the name of the user and his favorite square number.
-        DisplayResult(UserName, SNumber);
-    }
+   
 }
