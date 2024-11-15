@@ -12,7 +12,7 @@ public class Resume
         Console.WriteLine($"name: {_name}");
         Console.WriteLine("Jobs: ");
 
-        foreach(Job job in _jobs)
+        foreach(var job in _jobs)
         {
             job.Display();
         }
