@@ -1,9 +1,11 @@
+// Program.cs
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+        JournalMenu app = new JournalMenu();
+        app.DisplayMenu();
     }
 }
