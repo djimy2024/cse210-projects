@@ -38,7 +38,7 @@ public class Reference
 {
     public string _Book;
     public int _Chapter; 
-    public int _StartVerse; 
+    public int _Verse; 
     public int _EndVerse; 
 
     // Constructor for a single verse
@@ -46,7 +46,7 @@ public class Reference
     {
         _Book = book;
         _Chapter = chapter;
-        _StartVerse = startVerse;
+        _Verse = startVerse;
         _EndVerse = startVerse; // Single verse
     }
 
@@ -55,20 +55,20 @@ public class Reference
     {
         _Book = book;
         _Chapter = chapter;
-        _StartVerse = startVerse;
+        _Verse = startVerse;
         _EndVerse = endVerse;
     }
 
     // Get the reference as a string, e.g., John 3:16 or Proverbs 3:5-6
     public string GetDisplayText()
     {
-        if (_StartVerse == _EndVerse)
+        if (_Verse == _EndVerse)
         {
-            return $"{_Book} {_Chapter}:{_StartVerse}";
+            return $"{_Book} {_Chapter}:{_Verse}";
         }
         else
         {
-            return $"{_Book} {_Chapter}:{_StartVerse}-{_EndVerse}";
+            return $"{_Book} {_Chapter}:{_Verse}-{_EndVerse}";
         }
     }
 }
