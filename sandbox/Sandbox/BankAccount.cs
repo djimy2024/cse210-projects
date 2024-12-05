@@ -57,7 +57,7 @@ public class BankAccount
 
 class Program
 {
-    static void main (string[] args)
+    static void m1ain (string[] args)
     {
         // Create a new BankAccount with an initial balance of 100
         BankAccount account = new BankAccount(-100);

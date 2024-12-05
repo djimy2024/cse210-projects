@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Scriptures
 {
-    static void Main(string[] args)
+    static void Mnain(string[] args)
     {
         // Create a reference for the scripture
         Reference reference = new Reference("Matthew", 7, 7);
