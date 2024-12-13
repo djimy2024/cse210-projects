@@ -1,0 +1,3 @@
+Prepare myself,For the best of the future,100,True
+Go to the temple,For starting the basics ordinances,100,false
+Show my obedience to God,I seek all the blessings that God has in His store for me,100,1,3,50
